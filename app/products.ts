@@ -1,7 +1,6 @@
 export interface Product {
   id: number;
   name: string;
-  brand: string;
   price: number;
   image: string;
   description: string;
@@ -11,74 +10,66 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: "iPhone 15 Pro",
-    brand: "Apple",
-    price: 131999, // NPR price
-    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300&h=300&fit=crop",
-    description: "Latest iPhone with titanium design and A17 Pro chip",
-    category: "Electronics"
+    name: "Broccoli",
+    price: 180, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2016/06/11/15/33/broccoli-1450274_960_720.png?w=300&h=300&fit=crop",
+    description: "Fresh, crisp broccoli packed with nutrients and flavor.",
+    category: "Vegetable"
   },
   {
     id: 2,
-    name: "MacBook Air M3",
-    brand: "Apple",
-    price: 171599, // NPR price
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&h=300&fit=crop",
-    description: "13-inch MacBook Air with M3 chip",
-    category: "Electronics"
+    name: "Apple",
+    price: 250, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2016/09/29/08/33/apple-1702316_1280.jpg",
+    description: "Juicy, sweet apples perfect for snacking or baking.",
+    category: "Fruit"
   },
   {
     id: 3,
-    name: "AirPods Pro",
-    brand: "Apple",
-    price: 32999, // NPR price
-    image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=300&h=300&fit=crop",
-    description: "Wireless earbuds with active noise cancellation",
-    category: "Electronics"
+    name: "Banana",
+    price: 120, // NPR per dozen
+    image: "https://cdn.pixabay.com/photo/2014/04/16/09/58/banana-325461_960_720.jpg",
+    description: "Ripe, energy-rich bananas full of natural sweetness.",
+    category: "Fruit"
   },
   {
     id: 4,
-    name: "Nike Air Max",
-    brand: "Nike",
-    price: 17159, // NPR price
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop",
-    description: "Comfortable running shoes with air cushioning",
-    category: "Footwear"
+    name: "Tomato",
+    price: 90, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2019/07/11/10/14/cherry-tomato-4330441_640.jpg",
+    description: "Fresh red tomatoes ideal for salads and cooking.",
+    category: "Vegetable"
   },
   {
     id: 5,
-    name: "Samsung Galaxy S24",
-    brand: "Samsung",
-    price: 105599, // NPR price
-    image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=300&h=300&fit=crop",
-    description: "Android smartphone with AI features",
-    category: "Electronics"
+    name: "Orange",
+    price: 220, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2017/01/20/15/06/oranges-1995056_640.jpg",
+    description: "Citrusy and refreshing oranges rich in Vitamin C.",
+    category: "Fruit"
   },
   {
     id: 6,
-    name: "Sony WH-1000XM5",
-    brand: "Sony",
-    price: 52799, // NPR price
-    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop",
-    description: "Premium wireless noise-canceling headphones",
-    category: "Electronics"
+    name: "Carrot",
+    price: 100, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_640.jpg",
+    description: "Crunchy and sweet carrots packed with beta-carotene.",
+    category: "Vegetable"
   },
   {
     id: 7,
-    name: "Adidas Ultraboost",
-    brand: "Adidas",
-    price: 23759, // NPR price
-    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=300&h=300&fit=crop",
-    description: "High-performance running shoes with boost technology",
-    category: "Footwear"
+    name: "Cabbage",
+    price: 80, // NPR per piece
+    image: "https://cdn.pixabay.com/photo/2018/10/03/22/08/kohl-3722517_1280.jpg",
+    description: "Leafy green cabbage perfect for stir-fries and salads.",
+    category: "Vegetable"
   },
   {
     id: 8,
-    name: "iPad Pro 12.9",
-    brand: "Apple",
-    price: 145199, // NPR price
-    image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300&h=300&fit=crop",
-    description: "Professional tablet with M2 chip and Liquid Retina display",
-    category: "Electronics"
+    name: "Mango",
+    price: 300, // NPR per kg
+    image: "https://cdn.pixabay.com/photo/2016/07/22/02/58/mango-1534061_640.jpg",
+    description: "Delicious and juicy mangoes full of tropical flavor.",
+    category: "Fruit"
   }
 ];

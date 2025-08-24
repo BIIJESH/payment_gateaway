@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-gray-900">ShopCart</h1>
+            <h1 className="text-2xl font-bold text-green-500">Greenbasket </h1>
           </div>
 
           {/* Navigation */}

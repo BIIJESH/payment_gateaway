@@ -34,16 +34,15 @@ const CartSidebar: React.FC = () => {
   return (
     <>
       {/* Sidebar */}
-      <div 
-        className={`fixed right-0 top-16 h-[calc(100vh-64px)] w-96 bg-white shadow-xl z-50 flex flex-col border-l transform transition-transform duration-300 ease-in-out ${
-          state.isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+      <div
+        className={`fixed right-0 top-16 h-[calc(100vh-64px)] w-96 bg-white shadow-xl z-50 flex flex-col border-l transform transition-transform duration-300 ease-in-out ${state.isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="text-lg font-semibold text-black">
-            Shopping Cart ({totalItems} items)
+            Cart ({totalItems} items)
           </h2>
           <button
             onClick={toggleCart}
@@ -82,7 +81,6 @@ const CartSidebar: React.FC = () => {
                     <h4 className="text-sm font-medium text-black truncate">
                       {item.name}
                     </h4>
-                    <p className="text-sm text-gray-500">{item.brand}</p>
                     <p className="text-sm font-medium text-black">
                       NPR {item.price.toLocaleString('en-NP')}
                     </p>
@@ -132,7 +130,7 @@ const CartSidebar: React.FC = () => {
             <div className="space-y-2">
               <button
                 onClick={handlePayNow}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors duration-200 cursor-pointer"
+                className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg font-medium transition-colors duration-200 cursor-pointer"
               >
                 Pay Now
               </button>

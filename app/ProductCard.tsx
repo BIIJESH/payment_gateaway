@@ -33,12 +33,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.category}
           </span>
         </div>
-        {/* Brand Badge */}
-        <div className="absolute top-4 right-4">
-          <span className="bg-blue-600/90 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
-            {product.brand}
-          </span>
-        </div>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
@@ -46,7 +40,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Content Container */}
       <div className="p-6 flex-1 flex flex-col">
         {/* Product Name */}
-        <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors duration-200">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-green-600 transition-colors duration-200">
           {product.name}
         </h3>
         
@@ -68,7 +62,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           
           <button
             onClick={handleAddToCart}
-            className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-4 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <svg
               className="w-5 h-5"

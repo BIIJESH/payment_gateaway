@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ShopCart - Your Shopping Destination",
+  title: "GreenBasket - Fresh Fruits & Vegetables Delivered",
   description: "A modern shopping cart application with Khalti payment integration",
 };
 
